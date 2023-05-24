@@ -1,0 +1,18 @@
+div.query-suggestions > div.ais-Hits > ol.ais-Hits-list{
+    display: flex;
+    flex-wrap: nowrap ;
+}
+div.auto-complete div.ais-Hits > ol.ais-Hits-list{
+    flex-direction: column !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.auto-complete .ais-Hits, div.auto-complete .ais-Hits-list{
+    width: 100%;
+}
+ol.ais-Hits-list{
+    flex-direction: column !important;
+    max-height: 30em;
+    display: flex;
+    flex-wrap: wrap;
+}

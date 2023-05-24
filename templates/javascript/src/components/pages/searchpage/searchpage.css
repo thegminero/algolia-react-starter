@@ -1,0 +1,38 @@
+.search-results .ais-Hits-list{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+.search-results .ais-Hits{
+  min-width: 100%;
+}
+
+.ais-Pagination-list{
+    display: flex;
+}
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .ais-Pagination-list{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding: 15px 0px 15px 0px;
+  }
+  .ais-Pagination-item{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 1em;
+    list-style: none;
+  }
+  .ais-Pagination-item--selected{
+    background-color: #ed9984;
+  }
+  .ais-Pagination-item:hover{
+    background-color: #f34b21;
+  }

@@ -31,6 +31,20 @@ async function createGitignore(options) {
   });
 }
 
+async function addEnvVars(options) {
+  fs.appendFileSync('.env', `REACT_APP_APPID=${options.appid}`);
+  fs.appendFileSync('.env', `\n`);
+  fs.appendFileSync('.env', `REACT_APP_SEARCH_API_KEY=${options.searchkey}`);
+  fs.appendFileSync('.env', `\n`);
+  fs.appendFileSync('.env', `REACT_APP_INDEX_NAME=${options.indexname}`);
+  fs.appendFileSync('.env', `\n`);
+  fs.appendFileSync('.env', `REACT_APP_QRY_SUGGEST_INDEX=${options.qrysuggestindex}`);
+  fs.appendFileSync('.env', `\n`);
+  fs.appendFileSync('.env', `REACT_APP_MAIN_THEME_COLOR=${options.maincolor}`);
+
+
+}
+
 async function createLicense(options) {
   const targetPath = path.join(options.targetDirectory, 'LICENSE');
   const licenseContent = license.licenseText
@@ -53,11 +67,11 @@ export async function createProject(options) {
   options = {
     ...options,
     targetDirectory: options.targetDirectory || process.cwd(),
-    email: 'hi@dominik.dev',
-    name: 'Dominik Kundel',
+    email: 'guillaume.minero@algolia.com',
+    name: 'Guillaume minero',
   };
 
-  const fullPathName = new URL(import.meta.url).pathname;
+  const fullPathName = decodeURI(new URL(import.meta.url).pathname);
   const templateDir = path.resolve(
     fullPathName.substr(fullPathName.indexOf('/')),
     '../../templates',
@@ -90,6 +104,10 @@ export async function createProject(options) {
         title: 'Initialize git',
         task: () => initGit(options),
         enabled: () => options.git,
+      },
+      {
+        title: 'Add env vars',
+        task: () => addEnvVars(options),
       },
       {
         title: 'Install dependencies',

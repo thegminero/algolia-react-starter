@@ -1,0 +1,88 @@
+
+.ais-Facet{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .facet-title{
+    font-size: large;
+    font-weight: 600;
+  }
+  .ais-RefinementList ul, .ais-HierarchicalMenu ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    list-style: none;
+    padding: .5em 0 .5em 0;
+  }
+  .ais-RefinementList .ais-RefinementList-label:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+  }
+  .ais-RefinementList-label, .ais-HierarchicalMenu-label, .ais-HierarchicalMenu-link{
+    display: flex;
+  }
+  .ais-HierarchicalMenu-list--child{
+    padding-left: 15px;
+  }
+  .ais-HierarchicalMenu-item--selected{
+    border-radius: 10px;
+    background-color: #d6d3d3;
+  }
+  .ais-RefinementList-labelText{
+    padding-left: 1em;
+  }
+  .ais-RefinementList-count, .ais-HierarchicalMenu-count{
+    padding-right: 1em;
+    margin-left: auto;
+    opacity: .5;
+    font-size: x-small;
+  }
+  .ais-RefinementList-showMore {
+    cursor: pointer;
+    width: 100%;
+    background-color: #cecece;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .ais-RefinementList div.ais-RefinementList-searchBox{
+    padding-right: 1em;
+    padding-left: 1em;
+    border-color: lightgrey;
+    border-bottom: 1px solid gray;
+  }
+  .ais-RefinementList, .ais-RangeInput, .ais-HierarchicalMenu{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transition: 0.3s;
+    padding: 4px 16px;
+    padding-right: 15px;
+    max-width: 18em;
+    margin-top: 1em;
+  }
+  .ais-RangeInput-form{
+    display: flex;
+    justify-content: space-around;
+  }
+  .ais-RangeInput-input{
+    border-bottom: ridge;
+  }
+  .ais-RangeInput-submit{
+    background-color: rgb(206, 83, 83);
+    padding: .20em;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+  }
+  .ais-RefinementList--noRefinement{
+    display: none;
+  }

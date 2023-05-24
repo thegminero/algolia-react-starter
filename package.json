@@ -1,9 +1,9 @@
 {
-  "name": "@dkundel/create-project",
-  "version": "1.0.0",
-  "description": "A CLI to bootstrap my new projects",
+  "name": "@guillaumalgolia/algolia-react-starter",
+  "version": "1.0.5",
+  "description": "A CLI to bootstrap Algolia to a React Project",
   "main": "src/index.js",
-  "bin": "bin/create-project",
+  "bin": "bin/algolia-react-starter",
   "publishConfig": {
     "access": "public"
   },
@@ -12,9 +12,9 @@
   },
   "keywords": [
     "cli",
-    "create-project"
+    "algolia-react-starter"
   ],
-  "author": "Dominik Kundel <hi@dominik.dev> (https://dkundel.com)",
+  "author": "Guillaume Minero <guillaume.minero@algolia.com> (https://www.algolia.com)",
   "license": "MIT",
   "dependencies": {
     "arg": "^4.1.0",
